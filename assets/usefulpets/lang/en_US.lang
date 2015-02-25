@@ -1,0 +1,143 @@
+item.petWand.name=Pet Wand
+item.petWand.tooltip.help.convert=Left click a vanilla tamed pet to convert.
+item.petWand.tooltip.help.track=Right click a block to find converted pets you own.
+item.petWand.tooltip.help.more=Right click a converted pet for more help.
+item.clawIron.name=Iron Claw Covers
+item.clawGold.name=Gold Claw Covers
+item.clawDiamond.name=Diamond Claw Covers
+item.domesticEgg.name=Domestic Egg
+item.domesticEgg.tooltip.creative=NOTE: Does not work correctly in creative.
+item.domesticEgg.tooltip.holding=Contains: %s
+item.domesticEgg.tooltip.name=Name: %s
+item.domesticEgg.tooltip.level=Level: %s
+
+entity.pet.cat=Cat
+entity.pet.dog=Dog
+entity.pet.pig=Pig
+entity.pet.slime=Slime
+
+gui.pet.inventory=Pet Inventory
+gui.pet.skills=Skills
+gui.pet.title=Pet Skills
+gui.pet.level=Level
+gui.pet.freePoints=Free Points
+gui.pet.skillReq=Requires
+gui.pet.levelReq=Requires Level
+gui.pet.tracking=Pet Tracking (Last Seen)
+gui.pet.tracking.level=Lvl %s
+gui.pet.tracking.dim=Dim %s
+gui.pet.tracking.pos=Pos (%s, %s, %s)
+
+chat.pet.convert.success=Converted!
+chat.pet.convert.notTamed=This animal isn't tamed!
+chat.pet.convert.needOwnership=You don't own this pet.
+chat.pet.convert.weakness=This type of creature must be under the effect of a potion of weakness to be tamed.
+chat.pet.convert.notSmallSlime=Only small slimes may be tamed.
+chat.pet.convert.failure=This pet cannot be converted.
+chat.pet.help.level=Left click a converted pet with this item to attempt a level up.
+chat.pet.help.inv=Shift-right click a converted pet to see their inventory, and to access their skills.
+chat.pet.level.success=Your pet has leveled up!
+chat.pet.level.max=Your pet is at the maximum level.
+chat.pet.level.missing=You are missing: %s x %s
+chat.pet.notYours=This pet is not yours, and is owned by %s.
+
+misc.level.name=Levels
+
+pet.skill.hunger.name=Hunger
+pet.skill.hunger.desc=Allows eating
+pet.skill.hunger.eatOther.name=Eat other foods
+pet.skill.hunger.eatOther.desc=Eat food that other species can eat
+pet.skill.hunger.eatPlants.name=Eat plants
+pet.skill.hunger.eatPlants.desc=Allows eating plant matter
+pet.skill.hunger.eatProcessed.name=Eat processed
+pet.skill.hunger.eatProcessed.desc=Allows eating of process "human" food.
+pet.skill.hunger.eatGross.name=Eat gross food
+pet.skill.hunger.eatGross.desc=Allows eating of spider eyes and rotten flesh
+
+pet.skill.combat.name=Combat
+pet.skill.combat.desc=Attacking damage of a wooden sword
+pet.skill.combat.upgrade1.name=Upgrade Damage (1)
+pet.skill.combat.upgrade1.desc=Attack damage of a stone sword
+pet.skill.combat.upgrade2.name=Upgrade Damage (2)
+pet.skill.combat.upgrade2.desc=Attack damage of an iron sword
+pet.skill.combat.upgrade3.name=Upgrade Damage (3)
+pet.skill.combat.upgrade3.desc=Attack damage of a diamond sword
+pet.skill.combat.hostile.name=Hostile
+pet.skill.combat.hostile.desc=Attack nearby hostile mobs on sight.
+
+pet.skill.repellant.name=Mob Repellant
+pet.skill.repellant.desc=Keeps creepers away
+pet.skill.repellant.larger.name=Radius upgrade
+pet.skill.repellant.larger.desc=Increases range
+pet.skill.repellant.undead.name=Undead Repellant
+pet.skill.repellant.undead.desc=Keeps undead away
+pet.skill.repellant.spiders.name=Bug Repellant
+pet.skill.repellant.spiders.desc=Keeps the creepy crawlies away
+
+pet.skill.inventory.name=Inventory
+pet.skill.inventory.desc=Allows the pet 3 slots of inventory
+pet.skill.inventory.upgrade1.name=Upgrade Slots (1)
+pet.skill.inventory.upgrade1.desc=Adds 3 more slots
+pet.skill.inventory.upgrade2.name=Upgrade Slots (2)
+pet.skill.inventory.upgrade2.desc=Adds 3 more slots
+pet.skill.inventory.upgrade3.name=Upgrade Slots (3)
+pet.skill.inventory.upgrade3.desc=Adds 3 more slots
+pet.skill.inventory.upgrade4.name=Upgrade Slots (4)
+pet.skill.inventory.upgrade4.desc=Adds 3 more slots
+pet.skill.inventory.selfSufficient.name=Self Sufficient
+pet.skill.inventory.selfSufficient.desc=Allows the pet to eat from it's own inventory
+pet.skill.inventory.armor.name=Armor Slot
+pet.skill.inventory.armor.desc=Allows the pet to equip armor
+pet.skill.inventory.weapon.name=Weapon Slot
+pet.skill.inventory.weapon.desc=Allows the pet to equip a weapon over their claws
+pet.skill.inventory.pickup.name=Auto-Pickup
+pet.skill.inventory.pickup.desc=The pet will attempt to pick up items it already has in its inventory.
+
+pet.skill.defense.name=Defense
+pet.skill.defense.desc=Reduces damage taken by 10%
+pet.skill.defense.upgrade1.name=Extra Defense (1)
+pet.skill.defense.upgrade1.desc=Reduces damage taken by 15%.
+pet.skill.defense.upgrade2.name=Extra Defense (2)
+pet.skill.defense.upgrade2.desc=Reduces damage taken by 25%.
+pet.skill.defense.fire.name=Fire Immunity
+pet.skill.defense.fire.desc=Invulnerable to fire and lava.
+pet.skill.defense.breathless.name=Breathless
+pet.skill.defense.breathless.desc=Provides immunity to suffocation and drowning damage.
+pet.skill.defense.featherFall.name=Feather Falling
+pet.skill.defense.featherFall.desc=Provides immunity to falling damage.
+
+pet.skill.travel.name=Travel
+pet.skill.travel.desc=Increases run speed by 20%
+pet.skill.travel.upgrade1.name=Faster (1)
+pet.skill.travel.upgrade1.desc=Increases run speed by 20%
+pet.skill.travel.upgrade2.name=Faster (2)
+pet.skill.travel.upgrade2.desc=Increases run speed by 30%
+pet.skill.travel.mountable.name=Mountable
+pet.skill.travel.mountable.desc=Allows you to ride your pet with a saddle.
+pet.skill.travel.aquaticMount.name=Swimming Mount
+pet.skill.travel.aquaticMount.desc=Allows you to ride your pet in the water.
+pet.skill.travel.swimControl.name=Swim Control
+pet.skill.travel.swimControl.desc=Allows you to descend and ascend in the water on your pet.
+pet.skill.travel.mountJump.name=Jumping
+pet.skill.travel.mountJump.desc=Allows the pet to jump while mounted.
+
+pet.skill.health.name=Health Upgrade (1)
+pet.skill.health.desc=Increases health by 5 hearts.
+pet.skill.health.upgrade1.name=Health Upgrade (2)
+pet.skill.health.upgrade1.desc=Increases health by 5 hearts.
+
+pet.texture=Texture: %s
+
+pet.texture.cat.red=Red
+pet.texture.cat.siamese=Siamese
+pet.texture.cat.black=Black
+pet.texture.cat.ocelot=Ocelot
+
+pet.texture.dog.wolf_tame=Wolf (Tamed)
+pet.texture.dog.wolf=Wolf
+pet.texture.dog.wolf_angry=Wolf (Angry)
+
+pet.texture.pig.pig=Pig
+
+pet.texture.slime.slime=Slime
+pet.texture.slime.magmacube=Magma Cube

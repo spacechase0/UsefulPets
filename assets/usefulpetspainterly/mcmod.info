@@ -1,0 +1,23 @@
+[
+{
+  "modid": "SC0_UsefulPetsPainterly",
+  "name": "Useful Pets Addon - Painterly Textures",
+  "description": "Addon to Useful Pets that allows to select textures from Painterly Pack.",
+  "version": "1.0.3",
+  "mcversion": "1.7.10",
+  "url": "http://spacechase0.com/minecraft/mods/useful-pets-addon-painterly-textures/",
+  "updateUrl": "",
+  "authorList": [
+    "spacechase0"
+  ],
+  "credits": "rhodox, author of Painterly Pack",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+    "required-after:SC0_SpaceCore",
+    "required-after:SC0_UsefulPets"
+  ]
+}
+]

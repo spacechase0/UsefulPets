@@ -1,0 +1,15 @@
+black
+calico
+grey
+johnnycat
+meowshroom
+mottled
+ozelot
+red
+revolverocelot
+roamin
+siamese
+tiger
+tortoiseshell
+tuxedo
+white
