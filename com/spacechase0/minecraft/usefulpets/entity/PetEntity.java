@@ -509,12 +509,6 @@ public class PetEntity extends EntityAnimal implements IEntityOwnable
     	
     	super.onUpdate();
     	
-    	if ( forceLive )
-    	{
-    		isDead = false;
-    	}
-    	deathTime = 0;
-    	
     	if ( posY < -4.f )
     	{
     		setPosition( posX, -4.f, posZ );
@@ -731,12 +725,6 @@ public class PetEntity extends EntityAnimal implements IEntityOwnable
         return super.shouldDismountInWater( rider ) && !hasSkill( Skill.TRAVEL_SWIMMING.id );
     }
 	
-    public void travelToDimension( int dim )
-    {
-    	super.travelToDimension( dim );
-    	forceLive = false;
-    }
-    
     // EntityLivingBase, EntityLiving
     @Override
     protected boolean canDespawn()
@@ -1154,7 +1142,6 @@ public class PetEntity extends EntityAnimal implements IEntityOwnable
 	private float saturation;
 	private int regenTicks = 0;
 	private int syncTimer = 20;
-	private boolean forceLive = true;
 	
 	// AI stuff
 	private SitAI aiSit = new SitAI( this );
