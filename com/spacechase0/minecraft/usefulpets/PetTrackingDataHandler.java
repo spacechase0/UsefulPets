@@ -202,7 +202,7 @@ public class PetTrackingDataHandler
 	
 	private static Map< String, Map< UUID, PetData > > data = new HashMap< String, Map< UUID, PetData > >();
 	
-	private static Pattern loadPattern = Pattern.compile( "([a-zA-Z0-9\\-]+),([0-9A-Za-z\\-]+)\\=(\\-?[0-9]+)\\{(\\-?[0-9]+),(\\-?[0-9]+),(\\-?[0-9]+)\\},([0-9]+),([a-zA-Z0-9./:\\-]+),(.+)" );
+	private static Pattern loadPattern = Pattern.compile( "([a-zA-Z0-9\\-]+),([0-9A-Za-z\\-]+)\\=(\\-?[0-9]+)\\{(\\-?[0-9]+),(\\-?[0-9]+),(\\-?[0-9]+)\\},([0-9]+),([a-zA-Z0-9./:\\-_]+),(.+)" );
 	
 	private File lastDir;
 	private static final String FILENAME = "petTracking.dat";
