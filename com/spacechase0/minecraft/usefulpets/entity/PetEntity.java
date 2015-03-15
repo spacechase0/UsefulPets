@@ -278,6 +278,11 @@ public class PetEntity extends EntityAnimal implements IEntityOwnable
 	{
 		dataWatcher.updateObject( DATA_SITTING, ( byte )( sitting ? 1 : 0 ) );
 		aiSit.setSitting( isSitting() );
+		if ( sitting )
+		{
+			this.setTarget( null );
+			this.setAttackTarget( null );
+		}
 	}
 	
 	public float getHunger()
