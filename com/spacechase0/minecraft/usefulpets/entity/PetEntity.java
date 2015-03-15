@@ -664,6 +664,11 @@ public class PetEntity extends EntityAnimal implements IEntityOwnable
     {
     }
     */
+    
+    @Override
+    protected void onDeathUpdate()
+    {
+    }
 	
 	@Override
     public boolean attackEntityFrom( DamageSource source, float damage )
