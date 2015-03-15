@@ -499,9 +499,10 @@ public class PetEntity extends EntityAnimal implements IEntityOwnable
     @Override
     public void onUpdate()
     {
-    	if ( !hasSkill( Skill.COMBAT.id ) || getHealth() <= 0 )
+    	if ( !hasSkill( Skill.COMBAT.id ) || getHealth() <= 0 || getEntityToAttack() == getOwner() || getAttackTarget() == getOwner() )
     	{
     		setTarget( null );
+    		setAttackTarget( null );
     	}
     	
     	if ( riddenByEntity != null && ( !hasSkill( Skill.TRAVEL_MOUNTABLE.id ) || getHealth() <= 0 ) )
