@@ -77,3 +77,8 @@ pet.texture.slime.magma-stone=(Magma) Stone
 pet.texture.slime.magma-stone-plain=(Magma) Stone (Plain)
 pet.texture.slime.magma-lava=(Magma) Lava Stone
 pet.texture.slime.magma-lava-plain=(Magma) Lava Stone (Plain)
+
+pet.texture.silverfish.darkstone=Dark Stone
+pet.texture.silverfish.lightstone=Light Stone
+pet.texture.silverfish.grub=Grub
+pet.texture.silverfish.tsuchinoko=Tsuchinoko

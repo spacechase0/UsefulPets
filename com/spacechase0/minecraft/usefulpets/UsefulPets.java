@@ -38,6 +38,7 @@ import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 
+// 1.3 - Added silverfish.
 // 1.2.4 - Fixed crashing thing for pets. Updated for SpaceCore 0.7.9.
 // 1.2.3 - Added domestic egg recipe (oops...).
 // 1.2.2 - Added domestic eggs (for putting pets into items, which CAN be destroyed). Made the max level, skill level requirements, and leveling resource costs configurable.

@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
+import net.minecraft.entity.monster.EntitySilverfish;
 import net.minecraft.entity.monster.EntitySlime;
 import net.minecraft.entity.passive.EntityOcelot;
 import net.minecraft.entity.passive.EntityPig;
@@ -67,8 +68,18 @@ public enum PetType
 	       {
 	       	"textures/entity/slime/slime.png",
 	       	"textures/entity/slime/magmacube.png",
-	       } );
-	
+	       } ),
+	SILVERFISH( "silverfish", EntitySilverfish.class,
+	            new int[]
+	            {
+	            	Skill.HUNGER.id,
+	            	Skill.COMBAT.id,
+	            	Skill.DEFENSE.id,
+	            },
+	            new String[]
+	            {
+	            	"textures/entity/silverfish.png",
+	            } );
 	PetType( String theName, Class toConvertFrom, int[] theDefaultSkills, String[] theTextures )
 	{
 		name = theName;
@@ -100,6 +111,10 @@ public enum PetType
 		else if ( this.equals( SLIME ) )
 		{
 			return "mob.slime.small";
+		}
+		else if ( this.equals( SILVERFISH ) )
+		{
+			return "mob.silverfish.say";
 		}
 		
 		return null;
@@ -139,9 +154,13 @@ public enum PetType
 		SLIME.defaultFoodChoices.add( new ItemStack( cookie ) );
 		SLIME.defaultFoodChoices.add( new ItemStack( potato ) );
 		
+		SILVERFISH.defaultFoodChoices.add( new ItemStack( cookie ) );
+		SILVERFISH.defaultFoodChoices.add( new ItemStack( potato ) );
+		
 		types.put( CAT.name, CAT );
 		types.put( DOG.name, DOG );
 		types.put( PIG.name, PIG );
 		types.put( SLIME.name, SLIME );
+		types.put( SILVERFISH.name, SILVERFISH );
 	}
 }

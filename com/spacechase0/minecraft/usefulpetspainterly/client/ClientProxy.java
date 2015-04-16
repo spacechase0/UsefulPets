@@ -16,6 +16,7 @@ public class ClientProxy extends CommonProxy
 		doTextures( PetType.DOG, "dog" );
 		doTextures( PetType.PIG, "pig" );
 		doTextures( PetType.SLIME, "slime" );
+		doTextures( PetType.SILVERFISH, "silverfish" );
 	}
 	
 	private void doTextures( PetType type, String dir )

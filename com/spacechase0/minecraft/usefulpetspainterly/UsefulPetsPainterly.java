@@ -10,6 +10,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
+// 1.0.4 - Added silverfish support.
 // 1.0.3 - Updated for SpaceCore 0.7.9.
 // 1.0.2 - Added slime support.
 

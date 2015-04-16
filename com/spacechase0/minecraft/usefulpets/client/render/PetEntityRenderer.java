@@ -38,6 +38,7 @@ import com.spacechase0.minecraft.usefulpets.client.model.CatModel;
 import com.spacechase0.minecraft.usefulpets.client.model.DogModel;
 import com.spacechase0.minecraft.usefulpets.client.model.MagmaCubeModel;
 import com.spacechase0.minecraft.usefulpets.client.model.PigModel;
+import com.spacechase0.minecraft.usefulpets.client.model.SilverfishModel;
 import com.spacechase0.minecraft.usefulpets.client.model.SlimeModel;
 import com.spacechase0.minecraft.usefulpets.entity.PetEntity;
 import com.spacechase0.minecraft.usefulpets.pet.PetType;
@@ -73,6 +74,10 @@ public class PetEntityRenderer extends RenderLiving
 			{
 				mainModel = renderPassModel = magmaCubeModel;
 			}
+		}
+		else if ( pet.getPetType().equals( PetType.SILVERFISH ) )
+		{
+			mainModel = renderPassModel = silverfishModel;
 		}
 		
 		Minecraft.getMinecraft().renderEngine.bindTexture( getEntityTexture( entity ) );
@@ -212,6 +217,7 @@ public class PetEntityRenderer extends RenderLiving
 	private final ModelBase pigModel = new PigModel();
 	private final ModelBase slimeModel = new SlimeModel();
 	private final ModelBase magmaCubeModel = new MagmaCubeModel();
+	private final ModelBase silverfishModel = new SilverfishModel();
 	//private final ResourceLocation catTex = new ResourceLocation( "textures/entity/cat/red.png" );
 	//private final ResourceLocation dogTex = new ResourceLocation( "textures/entity/wolf/wolf_tame.png" );
 	

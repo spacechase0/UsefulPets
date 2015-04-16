@@ -15,6 +15,7 @@ entity.pet.cat=Cat
 entity.pet.dog=Dog
 entity.pet.pig=Pig
 entity.pet.slime=Slime
+entity.pet.silverfish=Silverfish
 
 gui.pet.inventory=Pet Inventory
 gui.pet.skills=Skills
@@ -141,3 +142,5 @@ pet.texture.pig.pig=Pig
 
 pet.texture.slime.slime=Slime
 pet.texture.slime.magmacube=Magma Cube
+
+pet.texture.silverfish.silverfish=Silverfish
