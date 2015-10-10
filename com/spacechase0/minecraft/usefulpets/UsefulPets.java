@@ -106,6 +106,8 @@ public class UsefulPets extends BaseMod
 		Skill.configure( config );
 		Level.configure( config );
 		
+		proxy.postInit();
+		
 		super.postInit( event );
 	}
 	

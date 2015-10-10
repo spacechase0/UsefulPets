@@ -28,6 +28,16 @@ public class ClientProxy extends CommonProxy
 	}
 	
 	@Override
+	public void postInit()
+	{
+		doTextures( PetType.CAT, "cat" );
+		doTextures( PetType.DOG, "dog" );
+		doTextures( PetType.PIG, "pig" );
+		doTextures( PetType.SLIME, "slime" );
+		doTextures( PetType.SILVERFISH, "silverfish" );
+	}
+	
+	@Override
 	public void setTrackingData( Map< UUID, PetData > data )
 	{
 		Minecraft mc = Minecraft.getMinecraft();
@@ -38,5 +48,33 @@ public class ClientProxy extends CommonProxy
 		PetTrackingGui gui = ( PetTrackingGui ) mc.currentScreen;
 		
 		gui.data = data;
+	}
+	
+	private void doTextures( PetType type, String dir )
+	{
+		String url = "/assets/usefulpets/textures/entity/" + dir + "/textures.txt";
+		
+		try
+		{
+			InputStream stream = getClass().getResourceAsStream( url );
+			InputStreamReader reader = new InputStreamReader( stream );
+			BufferedReader input = new BufferedReader( reader );
+			
+			while ( true )
+			{
+				String line = input.readLine();
+				if ( line == null )
+				{
+					break;
+				}
+				
+				type.textures.add( "usefulpets:textures/entity/" + dir + "/" + line + ".png" );
+			}
+		}
+		catch ( Exception exception )
+		{
+			UsefulPetsLog.warning( "Failed to read textures for " + dir + ":" );
+			exception.printStackTrace();
+		}
 	}
 }
